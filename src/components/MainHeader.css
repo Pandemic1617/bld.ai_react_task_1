@@ -1,0 +1,25 @@
+.head-card {
+    background-color: white;
+    width: 30%;
+    color: black;
+    font-size: 45px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    min-height: 15vh;
+}
+
+.head-card span {
+    font-size: large;
+}
+
+header > img {
+    height: 100%;
+}
+
+header {
+}

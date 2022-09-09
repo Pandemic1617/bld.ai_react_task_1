@@ -1,0 +1,251 @@
+/* Language: css */
+
+.course-header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* width: 100vw; */
+    height: 65px;
+
+    z-index: 5;
+
+    background-color: black;
+    color: white;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.course-header-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-course-page-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-course-page-header {
+    background-color: rgb(30, 30, 30);
+
+    padding: 10px 40% 10px 20%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.single-course-page-header-path {
+    color: rgb(206, 192, 252);
+    font-size: small;
+    font-weight: 600;
+}
+
+.single-course-page-header-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.single-course-page-header-subtitle {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    /* margin-top: 10px; */
+}
+
+.single-course-page-header-desc {
+    display: flex;
+    flex-direction: row;
+
+    font-size: small;
+}
+
+.single-course-page-header-stars {
+    color: #e59819;
+}
+
+.single-course-page-main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40% 30px 20%;
+}
+
+.single-course-page-main-what-youll-learn {
+    display: flex;
+    flex-direction: column;
+    /* margin: 30px 0; */
+    padding: 30px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.single-course-page-main-what-youll-learn > h1 {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.single-course-page-main-what-youll-learn-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.single-course-page-main-requirements {
+    margin: 30px 0;
+}
+
+.single-course-page-main-requirements-data {
+    font-size: small;
+    font-weight: 400;
+}
+
+.single-course-page-main-featured-review {
+    padding: 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-course-page-main-featured-review-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.single-course-page-main-featured-review-title {
+    margin-top: 0;
+}
+
+.single-course-page-main-featured-review-stars {
+    margin: 15px 0;
+}
+
+.single-course-page-main-featured-review {
+    margin-top: 40px;
+}
+
+.single-course-page-main-featured-also-bought {
+}
+
+.also-course-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.also-course-card-container-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.also-course-card-container > img {
+    width: 100px;
+    height: 70px;
+    margin: 0 10px;
+}
+
+.single-course-page-main-reviews {
+}
+
+.single-course-page-main-content-accordion-length {
+    margin-left: auto;
+}
+
+.single-course-page-main-content-accordion-name {
+    font-weight: 700;
+}
+
+.single-course-page-main-content-accordion-container {
+    /* background-color: lightgrey; */
+    /* had to use sx={{}} to override the default styling of the accordion */
+}
+
+.single-course-page-main-content-accordion-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.single-course-page-main-content-accordion-details-container > span {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.single-course-page-main-reviews-data-review-avatar {
+    width: 10%;
+}
+
+.single-course-page-main-reviews-data-review {
+    display: flex;
+}
+
+.single-course-page-main-reviews-data-review-data {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.single-course-page-main-reviews-data-review-head-stars {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+}
+
+.single-course-page-main-reviews-data-review-text {
+}
+
+.single-course-page-main-reviews-data-review-helpful {
+    font-size: smaller;
+    color: grey;
+}
+
+.single-course-page-main-reviews-data-review-icon {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 100%;
+    font-size: 20px;
+    color: black;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.single-course-page-main-reviews-data-review-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.single-course-page-main-reviews-data-review-icon-container > span {
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: small;
+}
+
+.single-course-page-main-instructors-data-container-name {
+    color: purple;
+    text-decoration: underline;
+}
+
+.single-course-page-main-instructors-data-container-head {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
