@@ -2,6 +2,7 @@ import React from "react";
 import * as style from "./Card.style";
 import { Course } from "../type/course";
 import Stars from "./Stars";
+import { useNavigate } from "react-router-dom";
 
 interface props {
     data: Course;
@@ -9,9 +10,10 @@ interface props {
 
 const Card: React.FC<props> = ({ data }) => {
     const [isHovered, setIsHovered] = React.useState(false);
+    const navigate = useNavigate();
 
     return (
-        <div style={style.container} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div style={style.container} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onClick={() => navigate("/course/" + data.id)}>
             <div style={style.cardContainer}>
                 <img style={style.image} src={data.image} />
                 <span style={style.title}>{data.title}</span>
