@@ -3,10 +3,11 @@
 .course-header {
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    /* width: 100vw; */
+    /* bottom: 70px; */
+    width: 100vw;
     height: 65px;
 
     z-index: 5;
@@ -73,7 +74,18 @@
 .single-course-page-main {
     display: flex;
     flex-direction: column;
-    margin: 30px 40% 30px 20%;
+    margin: 30px 0 30px 20%;
+    width: 40%;
+}
+
+.single-course-page-side {
+    margin: 30px 20% 30px 0px;
+    width: 20%;
+}
+
+.single-course-page {
+    padding: 0;
+    display: flex;
 }
 
 .single-course-page-main-what-youll-learn {
@@ -248,4 +260,84 @@
     flex-direction: row;
     /* justify-content: space-between; */
     align-items: center;
+}
+
+.single-course-page-side-container2 {
+    width: "20%";
+    position: relative;
+    top: -250px;
+    left: 100px;
+    z-index: 20;
+}
+
+.single-course-page-side-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    padding: 20px;
+    min-height: 500px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.single-course-page-side-container-price {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.single-course-page-side-container-cart-button > button {
+    width: 100%;
+    background-color: purple;
+    border: 0;
+    border-radius: none;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+}
+
+.single-course-page-side-container-button-button > button {
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: none;
+    padding: 10px;
+    color: black;
+    margin: 10px 0;
+}
+
+.single-course-page-side-container-button-button-text {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px auto;
+}
+
+.single-course-page-side-container-points-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.single-course-page-side-container-points-items {
+}
+
+.single-course-page-side-container-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.single-course-page-side-container-actions-item {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.single-course-page-side-container-price-subtitle {
+    font-size: small;
+    font-weight: 300;
+    color: red;
+    margin-bottom: 10px;
 }
